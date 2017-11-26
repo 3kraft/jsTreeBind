@@ -1,6 +1,6 @@
 {
   "name": "js-tree-bind",
-  "version": "0.0.1",
+  "version": "0.0.1-SNAPSHOT",
   "devDependencies": {
     "browserify": "^8.1.3",
     "del": "^1.1.1",
@@ -12,9 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TMiguelT/jsTree-bind.git"
+    "url": "https://github.com/3kraft/jsTreeBind"
   },
   "scripts": {
-    "build": "uglifyjs src/jsTreeBind.js src/MutationObserver.js src/WeakMap.js -m -c -o dist/jsTreeBind.min.js"
+    "build": "uglifyjs src/jsTreeBind.js src/MutationObserver.js src/WeakMap.js -m -c -o dist/jsTreeBind.min.js",
+    "build-unminified": "uglifyjs src/jsTreeBind.js src/MutationObserver.js src/WeakMap.js  -b -o dist/jsTreeBind.js"
   }
 }
